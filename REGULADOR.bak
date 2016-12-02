@@ -1,0 +1,221 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Poncho_Esqueleto
+LIBS:Misc_Poncho_Grande
+LIBS:CNC_PONCHO_EDU_NXP-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title "CNC Poncho - Regulador de Voltage"
+Date "2016-11-26"
+Rev "1.0"
+Comp "CESE - Curso de diseño de PCB"
+Comment1 "Autor: Marcelo Franz Moreno Marin"
+Comment2 "Licencia: doc/LICENCIA"
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 2550 2900 0    60   Output ~ 0
+EXT-V
+$Comp
+L LM2596 U1
+U 1 1 58414399
+P 4100 3600
+F 0 "U1" H 4100 3950 60  0000 C CNN
+F 1 "LM2596" H 4100 3250 60  0000 C CNN
+F 2 "" H 4000 3600 60  0001 C CNN
+F 3 "" H 4000 3600 60  0001 C CNN
+	1    4100 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C1
+U 1 1 5841455A
+P 3050 3800
+F 0 "C1" H 3075 3900 50  0000 L CNN
+F 1 "CP" H 3075 3700 50  0000 L CNN
+F 2 "" H 3088 3650 50  0000 C CNN
+F 3 "" H 3050 3800 50  0000 C CNN
+	1    3050 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Schottky D3
+U 1 1 584147D7
+P 4900 4100
+F 0 "D3" V 4900 4200 50  0000 C CNN
+F 1 "D_Schottky" H 4900 4000 50  0000 C CNN
+F 2 "" H 4900 4100 50  0000 C CNN
+F 3 "" H 4900 4100 50  0000 C CNN
+	1    4900 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X02 P7
+U 1 1 58414896
+P 1250 3450
+F 0 "P7" H 1250 3600 50  0000 C CNN
+F 1 "CONN_01X02" V 1350 3450 50  0000 C CNN
+F 2 "" H 1250 3450 50  0000 C CNN
+F 3 "" H 1250 3450 50  0000 C CNN
+	1    1250 3450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR011
+U 1 1 58415BE4
+P 3050 4500
+F 0 "#PWR011" H 3050 4250 50  0001 C CNN
+F 1 "GND" H 3050 4350 50  0000 C CNN
+F 2 "" H 3050 4500 50  0000 C CNN
+F 3 "" H 3050 4500 50  0000 C CNN
+	1    3050 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR L1
+U 1 1 58416676
+P 5450 3700
+F 0 "L1" V 5400 3700 50  0000 C CNN
+F 1 "INDUCTOR" V 5550 3700 50  0000 C CNN
+F 2 "" H 5450 3700 50  0000 C CNN
+F 3 "" H 5450 3700 50  0000 C CNN
+	1    5450 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L CP C2
+U 1 1 584170D3
+P 6000 4100
+F 0 "C2" H 6025 4200 50  0000 L CNN
+F 1 "CP" H 6025 4000 50  0000 L CNN
+F 2 "" H 6038 3950 50  0000 C CNN
+F 3 "" H 6000 4100 50  0000 C CNN
+	1    6000 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR012
+U 1 1 58417AEB
+P 5450 4650
+F 0 "#PWR012" H 5450 4400 50  0001 C CNN
+F 1 "GND" H 5450 4500 50  0000 C CNN
+F 2 "" H 5450 4650 50  0000 C CNN
+F 3 "" H 5450 4650 50  0000 C CNN
+	1    5450 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 3400 3550 3400
+Wire Wire Line
+	2550 2900 3050 2900
+Wire Wire Line
+	3050 2900 3050 3650
+Connection ~ 3050 3400
+Wire Wire Line
+	3050 3950 3050 4500
+Wire Wire Line
+	3400 4200 1600 4200
+Wire Wire Line
+	3400 3600 3400 4200
+Wire Wire Line
+	3400 3600 3550 3600
+Connection ~ 3050 4200
+Wire Wire Line
+	3550 3800 3400 3800
+Connection ~ 3400 3800
+Wire Wire Line
+	4650 3700 5150 3700
+Wire Wire Line
+	4900 3950 4900 3700
+Connection ~ 4900 3700
+Wire Wire Line
+	4650 3500 6000 3500
+Wire Wire Line
+	6000 3500 6000 3950
+Wire Wire Line
+	5750 3700 6500 3700
+Connection ~ 6000 3700
+Wire Wire Line
+	4900 4250 4900 4400
+Wire Wire Line
+	4900 4400 6000 4400
+Wire Wire Line
+	6000 4400 6000 4250
+Wire Wire Line
+	5450 4650 5450 4400
+Connection ~ 5450 4400
+$Comp
+L +5V #PWR013
+U 1 1 58419510
+P 6500 3700
+F 0 "#PWR013" H 6500 3550 50  0001 C CNN
+F 1 "+5V" V 6600 3750 50  0000 C CNN
+F 2 "" H 6500 3700 50  0000 C CNN
+F 3 "" H 6500 3700 50  0000 C CNN
+	1    6500 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L FUSE F1
+U 1 1 5841DA53
+P 2500 3400
+F 0 "F1" H 2600 3450 50  0000 C CNN
+F 1 "FUSE" H 2400 3350 50  0000 C CNN
+F 2 "" H 2500 3400 50  0000 C CNN
+F 3 "" H 2500 3400 50  0000 C CNN
+	1    2500 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 3500 1600 3500
+Wire Wire Line
+	1600 3500 1600 4200
+Wire Wire Line
+	2700 4200 2700 4200
+$Comp
+L D D2
+U 1 1 5841F6B2
+P 1850 3400
+F 0 "D2" H 1850 3500 50  0000 C CNN
+F 1 "D" H 1850 3300 50  0000 C CNN
+F 2 "" H 1850 3400 50  0000 C CNN
+F 3 "" H 1850 3400 50  0000 C CNN
+	1    1850 3400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1450 3400 1700 3400
+Wire Wire Line
+	2000 3400 2250 3400
+$EndSCHEMATC

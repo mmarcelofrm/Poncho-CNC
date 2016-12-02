@@ -41,7 +41,7 @@ Date "2016-11-26"
 Rev "1.0"
 Comp "CESE - Curso de diseño de PCB"
 Comment1 "Autor: Marcelo Franz Moreno Marin"
-Comment2 "Licencia:"
+Comment2 "Licencia: doc/LICENCIA"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -57,8 +57,8 @@ $EndSheet
 $Sheet
 S 1100 3250 1250 2500
 U 583A30FF
-F0 "REGULATOR" 60
-F1 "REGULATOR.sch" 60
+F0 "REGULADOR" 60
+F1 "REGULADOR.sch" 60
 $EndSheet
 Text Notes 1100 1200 0    197  ~ 39
 Poncho CNC
